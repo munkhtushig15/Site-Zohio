@@ -2,9 +2,9 @@
     margin: 0px;
 }
 body {
-	background: linear-gradient(-45deg, #2F4F4F	, black, #20B2AA);
+	background: linear-gradient(-45deg, #2F4F4F, black, #20B2AA);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease infinite;
 	height: 100vh;
 }
 
@@ -25,7 +25,10 @@ body {
     flex-direction: column;
 }
 header {
+    z-index: 1;
     position: sticky;
+    top: 0px;
+    left: 0px;
     width: 100vw;
     height: 80px;
     background-color: black;
@@ -75,7 +78,7 @@ header {
 }
 #SEARCH {
     color: white;
-    background-color: black;
+    background-color: #343d46 ;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -91,7 +94,14 @@ header {
     border-radius: 20px;
     font-size: 18px;
     border: 0px solid white;
+    transition: 0.5s;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#btn:hover {
+    color: white;
+}
+main{
+    z-index: 0;
 }
 .abt {
     display: flex;
@@ -108,7 +118,7 @@ header {
 }
 .starGuardian {
     width: 100vw;
-    height: 900px;
+    height: 800px;
 }
 .strDustLogo {
     width: 400px;
@@ -138,9 +148,11 @@ header {
     top: 650px;
     left: 300px;
     border: 0px solid green;
+    transition: 0.5s;
+    cursor: pointer;
 }
 #seMore:hover {
-    box-shadow: 1px 1px 10px #20B2AA;
+    box-shadow: 0px 0px 20px #20B2AA;
 }
 .watHappen {
     width: 100vw;
@@ -151,13 +163,260 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     position: absolute;
-    top: 1050px;
+    top: 980px;
     left: 250px;
 }
 #news {
     width: 800px;
     height: auto;
     position: absolute;
-    top: 1150px;
+    top: 1080px;
     left: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#news:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 2px solid #65737e ;
+    border-radius: 20px;
+}
+.slot2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 1080px;
+    left: 1080px;
+}
+.news1 {
+    width: 530px;
+    height: 100px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+.news2 {
+    width: 530px;
+    height: 100px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.news3 {
+    width: 530px;
+    height: 100px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.news4 {
+    width: 530px;
+    height: 100px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+.news1:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 1px solid #65737e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.news2:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 1px solid #65737e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.news3:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 1px solid #65737e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.news4:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 1px solid #65737e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pht {
+    width: 174px;
+    height: auto;
+    border-radius: 0 20px 20px 0;
+}
+.ttl {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.WrCnIfnd {
+    color: gray;
+}
+.info {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.OurGames {
+    width: 100vw;
+    height: 1500px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#ttl2 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+    left: 180px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tomHoyr {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    gap: 40px;
+}
+.mini {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    gap: 40px;
+}
+.jijguud1 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.jijguud2 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.jijguud3 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.bigPhoto {
+    border-radius: 20px;
+}
+.miniPhoto {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+.miniPhoto:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 1px solid #65737e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.bigPhoto:hover {
+    background-color: rgba(128,128,128,.2);
+    border: 1px solid #65737e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.logo123 {
+    width: 50px;
+    height: auto;
+}
+footer {
+    padding-top: 90px;
+    width: 100vw;
+    height: 250px;
+    background-color: #1f1f1f;
+}
+.spprts {
+    color: #65737e;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.spprts:hover {
+    color: white;
+    text-decoration:underline;
+}
+.iconsss {
+    font-size: 25px !important;
+    color: #65737e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.iconsss:hover {
+    color: #DC143C;
+}
+.heseg1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.sprting {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.cpyR {
+    font-size: 18px;
+    color: #65737e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cpyR:hover {
+    text-decoration: underline;
+    color: white;
+}
+.md {
+    font-size: 14px;
+    color: #65737e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.copyRight {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    gap: 10px;
+}
+.to {
+    color: #65737e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.to:hover {
+    color: #DC143C;
+}
+.heseg2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 540px;
 }
